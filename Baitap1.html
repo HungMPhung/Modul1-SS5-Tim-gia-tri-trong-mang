@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("Nhap so can kiem tra:"));
+    let x = [1,2,3,4,5,6,7,8,9];
+    let i = 0;
+    let writer = "";
+    function checkNumber() {
+       for (i = 0; i < x.length; i++) {
+           if(number === x[i]) { return true}
+       } return false;
+    }
+    if (checkNumber()) {
+        writer = writer + number + " thuoc vi tri " + i + " cua mang";
+    } else {
+        writer = writer + number + " khong thuoc mang";
+    }
+    document.write(writer);
+</script>
+</body>
+</html>
